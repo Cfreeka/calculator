@@ -36,6 +36,7 @@ class MainActivity : ComponentActivity() {
                         .background(mediumGray)
                         .padding(16.dp)
                 )
+                println("I am making a push to the github repository")
 
             }
         }
