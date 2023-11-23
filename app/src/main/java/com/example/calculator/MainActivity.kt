@@ -32,12 +32,11 @@ class MainActivity : ComponentActivity() {
                     state = state,
                     onAction = viewModel::onAction,
                     buttonSpacing = buttonSpacing,
-                    modifier = Modifier.fillMaxSize()
+                    modifier = Modifier
+                        .fillMaxSize()
                         .background(mediumGray)
                         .padding(16.dp)
                 )
-                println("I am making a push to the github repository")
-
             }
         }
     }

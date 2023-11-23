@@ -24,10 +24,9 @@ class CalculatorViewModel: ViewModel() {
     }
 
     private fun enterOperation(operation: CalculatorOperation) {
+
+
         if (state.number1.isNotBlank()) {
-            state = state.copy(operation = operation)
-        }
-        if (state.number2.isNotBlank()){
             state = state.copy(operation = operation)
         }
 
@@ -107,7 +106,9 @@ class CalculatorViewModel: ViewModel() {
             state = state.copy(
                 number1 = state.number1 + number
             )
+            return
         }
+
         if (state.number2.length >= MAX_NUM_LENGTH) {
             return
         }
